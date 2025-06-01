@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Fundo do Mar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="bubbles"></div>
+    <div class="container">
+        <header>
+            <h1>Quiz Fundo do Mar</h1>
+            <p>Teste seus conhecimentos sobre o fundo do mar! Escolha entre perguntas fáceis ou desafiadoras e mergulhe nessa aventura interativa repleta de peixes e bolhas!</p>
+        </header>
+        <div id="menu">
+            <button id="btn-facil" class="btn">Fácil</button>
+            <button id="btn-dificil" class="btn">Difícil</button>
+        </div>
+        <div id="quiz" class="hide">
+            <div id="quiz-header">
+                <div class="progress-bar-bg">
+                    <div id="progress-bar"></div>
+                </div>
+                <span id="progress-text"></span>
+            </div>
+            <div id="question-block">
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+            </div>
+            <div id="feedback"></div>
+        </div>
+        <div id="result" class="hide">
+            <h2 id="final-message"></h2>
+            <p id="score"></p>
+            <button id="restart" class="btn">Voltar ao início</button>
+        </div>
+    </div>
+    <!-- Desenhos de peixes no fundo -->
+    <div class="fish fish1"></div>
+    <div class="fish fish2"></div>
+    <div class="fish fish3"></div>
+    <script src="index.js"></script>
+</body>
+</html>
